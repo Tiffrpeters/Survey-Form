@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">freeCodeCamp Survey Form</h1>
+  <p id="description">Thank you for taking the time to help is improve this platform</p>
+  <form id="survey-form">
+    <fieldset>
+    <label id="name-label" for="name-label"><input placeholder="Enter your name" id="name" name="name" type="text" required>Name</input></label><label for="email-label" id="email-label"><input placeholder="Enter your email" id="email" name="email" type="email" required>Email</input></label><label for="number-label" id="number-label">
+    <input placeholder="number" id="number" name="number" type="number" min="13" max="120">Number</input></label>
+    </fieldset>
+    <fieldset>
+      <label for="dropdown">Which option best describes your current role?
+      <select id="dropdown" name="dropdown"><option value="">Select current role</option>
+      <option value="1">I'm working</option>
+      <option value="2">I'm in school</option>
+      <option value="3">other</option>
+      </select>
+      <label>Would you recommend freeCodeCamp to a friend?</label>
+      <label for="definitely"><input value="definitely" id="definitely" type="radio" name="answer" class="inline"/>Definitely</label>
+      <label for="maybe"><input value="maybe" id="maybe" type="radio" name="answer" class="inline"/>Maybe</label>
+      <label for="not-sure"><input value="not-sure" id="not-sure" type="radio" name="answer" class="inline"/>Not Sure</label>
+    </fieldset>
+    <fieldset>
+      <label>What is your favorite feature of freeCodeCamp?</label>
+        <select id="dropdown" name="dropdown">
+          <option value="">Select an option</option>
+          <option value="1">Challenges</option>
+          <option value="2">Projects</option>
+          <option value="3">Community</option>
+          <option value="4">Open Source</option></select>
+      <label>What would you like to see improved? (check all that apply)</label>
+        <label for="front-end-projects"><input value="front-end-projects" id="front-end-projects" type="checkbox" name="front-end-projects" class="inline"/>Front-end Projects</label>
+        <label for="back-end-projects"><input value="back-end-projects" id="back-end-projects" type="checkbox" name="back-end-projects" class="inline"/>Back-end Projects</label>
+        <label for="data-visualization"><input value="data-visualization" value="1" id="data-visualization" type="checkbox" name="data-visualation" class="inline"/>Data Visualization</label><label for="challenges"><input value="2" id="challenges" type="checkbox" name="challenges" class="inline"/>Challenges</label><label for="open-source-community"><input value="3" id="open-source-community" type="checkbox" name="open-source-community" class="inline"/>Open Source Community</label><label for="forum"><input value="4" id="forum" type="checkbox" name="forum" class="inline"/>Forum</label>
+    </fieldset>
+    <fieldset>
+    <label for="comment">Any Comments or Suggestions?<textarea id="comment" name="comment" rows="3" cols="39" placeholder="Enter your comment here..."></textarea>
+    </label>
+    </fieldset>
+    <fieldset>
+    <input type="submit" id="submit" value="Submit"/></fieldset>
+  </form>
+ </body>
+</html>
